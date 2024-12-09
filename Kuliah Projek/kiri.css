@@ -1,0 +1,81 @@
+/* Reset default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background: linear-gradient(to bottom, #1e3c72, #2a5298); /* Warna gradasi */
+    color: white;
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Judul sidebar */
+.sidebar h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #ffd700, #ff8c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu list */
+.sidebar ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Tautan menu */
+.sidebar ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Hover efek pada tautan */
+.sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffd700;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .sidebar h1 {
+        font-size: 20px;
+    }
+
+    .sidebar ul li a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
